@@ -55,7 +55,6 @@ export const loginUserFailure = (error) => {
     return {
         type: LOGIN_USER_FAILURE,
         payload: {
-            //是因为在checkHttpStatus下else下的error要throw出来的，所以紧接其后，这里应该是用error.res.来衔接吧，这么认为恰当不。
             status: error.status,
             statusText: error.statusText
         }
